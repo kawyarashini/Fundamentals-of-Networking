@@ -28,13 +28,16 @@ Server0 → Switch0 (Fa0/1)
 PC0 → Switch0 (Fa0/2)
 PC1 → Switch0 (Fa0/3)
 PC2 → Switch0 (Fa0/4)
+
 ⚙️ Configuration Steps
+
 1️⃣ Server Static IP Configuration
 
 The server must have a fixed IP before acting as a DHCP server.
 
 IP Address: 192.168.1.1
 Subnet Mask: 255.255.255.0
+
 2️⃣ DHCP Configuration
 
 The server is configured to assign IP addresses automatically.
@@ -46,12 +49,14 @@ Subnet Mask: 255.255.255.0
 Default Gateway: 0.0.0.0
 DNS Server: 0.0.0.0
 Maximum Users: 255
+
 3️⃣ Client Configuration
 
 Each PC is configured to obtain an IP address dynamically:
 
 Set IP Configuration to DHCP
 Devices automatically receive IP addresses (e.g., 192.168.1.x)
+
 ✅ Verification and Testing
 Commands Used
 
@@ -67,9 +72,7 @@ ping 192.168.1.1
 Expected Result
 All devices should successfully communicate
 Ping results should show 0% packet loss
-📷 Submission Requirements
-Screenshot of successful ping (PC0 → PC2)
-Saved Packet Tracer file (.pkt)
-📚 Conclusion
 
+
+📚 Conclusion
 This lab successfully demonstrates how a DHCP server simplifies network management by automatically assigning IP addresses to devices, reducing manual configuration and errors.
